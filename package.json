@@ -1,6 +1,7 @@
 {
   "name": "neugeudongnae",
   "version": "0.1.0",
+  "homepage": "https://dahyeon11.github.io/saessakmkt/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
