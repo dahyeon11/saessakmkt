@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/saessakmkt">
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/login" element={<Login />} />
