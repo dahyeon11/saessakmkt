@@ -17,7 +17,7 @@ class Item extends Component {
 
     render () {
         return (
-            <div>
+            <div style={{margin: '60px 0 0 0'}}>
                 {dummyData.map((elements, index) => {
                     return (
                         <ItemWrapper>
@@ -65,7 +65,8 @@ class Item extends Component {
 const ItemWrapper = styled.div`
     display: flex;
     height: 100px;
-    margin: 20px 0 0 0;
+    margin: 30px 0 0 0;
+    -webkit-text-stroke: 0.45px;
 `
 const ImgArea = styled.div`
     flex-shrink: 0;

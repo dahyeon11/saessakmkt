@@ -14,7 +14,7 @@ class Main extends Component {
 
                 <Header />
                 <Item />
-                <Footer />
+                
 
                 </Container>
             </div>

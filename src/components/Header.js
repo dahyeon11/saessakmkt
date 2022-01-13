@@ -9,6 +9,7 @@ class Header extends Component {
     render () {
         return (
             <header>
+                <div>
                 <TopBaseBar>
                 <Logo>
                     <RiIcons.RiSeedlingFill size={40} />
@@ -16,6 +17,7 @@ class Header extends Component {
                 </Logo>
                 <IoIcons.IoSearchOutline style={{'margin-left': 'auto'}} size={30} />
                 </TopBaseBar>
+                </div>
             </header>
         )
     }
@@ -34,11 +36,13 @@ const Title = styled.span`
 `
 
 const TopBaseBar = styled.div`
+    position: fixed;
     display: flex;
     padding: 20px;
     height: 60px;
+    width: 100%;
     color: #FFF;
-    background-color: rgb(255, 108, 0);
+    background-color: rgb(23, 200, 36);
     justify-content: center;
     align-items: center;
 
