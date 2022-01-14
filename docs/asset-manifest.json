@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/saessakmkt/static/css/main.854e5c25.css",
-    "main.js": "/saessakmkt/static/js/main.8d43f221.js",
+    "main.js": "/saessakmkt/static/js/main.09fa6131.js",
     "static/js/787.52ea6ca5.chunk.js": "/saessakmkt/static/js/787.52ea6ca5.chunk.js",
     "static/media/naver.png": "/saessakmkt/static/media/naver.b3854d2dd22c56e13835.png",
     "static/media/logo.svg": "/saessakmkt/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/saessakmkt/index.html",
     "static/media/naver.svg": "/saessakmkt/static/media/naver.f62fb8e0855d4198897aa106c95aff9a.svg",
     "main.854e5c25.css.map": "/saessakmkt/static/css/main.854e5c25.css.map",
-    "main.8d43f221.js.map": "/saessakmkt/static/js/main.8d43f221.js.map",
+    "main.09fa6131.js.map": "/saessakmkt/static/js/main.09fa6131.js.map",
     "787.52ea6ca5.chunk.js.map": "/saessakmkt/static/js/787.52ea6ca5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.854e5c25.css",
-    "static/js/main.8d43f221.js"
+    "static/js/main.09fa6131.js"
   ]
 }
