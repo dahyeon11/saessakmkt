@@ -3,19 +3,32 @@ import styled from "styled-components";
 import GoogleLogin from 'react-google-login'
 import naver from '../img/naver.png'
 import OAuth from '../components/OAuth';
+import postData from '../modules/postdata'
+
 
 
 class Login extends Component {
+    state = {
+        loginInfo: {
+            userId: null,
+            pwd: null,
+        }
+    }
 
+    loginHandler = () => {
+        console.log('로그인 정보는 ', this.state.loginInfo)
+        postData('login', this.state.loginInfo)
+        
+    }
 
     render () {
         return (
             <div>
                 <Container>
                 <Test>로그인</Test>
-                <IdInput></IdInput>
-                    <PWDInput></PWDInput>
-                    <Btn1>확인</Btn1>
+                <IdInput onChange={(event) => this.setState({loginInfo: {userId: event.target.value}})}></IdInput>
+                    <PWDInput onChange={(event) => this.setState({loginInfo: {pwd: event.target.value}})}></PWDInput>
+                    <Btn1 onClick={this.loginHandler}>확인</Btn1>
                     <div style={{margin: '20px 0 0 0'}}/>
                     <GoogleLogin
     clientId="1"
