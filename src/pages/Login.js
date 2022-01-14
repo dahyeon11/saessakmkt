@@ -40,7 +40,7 @@ const Container = styled.div`
 
 const Test = styled.div`
 margin: 100px 0 20px 0;
-font-size: 18px;
+font-size: 22px;
 `
 
 const IdInput = styled.input.attrs({

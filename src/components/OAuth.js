@@ -11,7 +11,7 @@ class OAuth extends Component {
             <div>
                 <Container>
 
-                <Icon /> <Text>네이버로 간편 가입</Text>
+                <Icon /> <Text>네이버로 간편 로그인</Text>
                 
 
                 </Container>
