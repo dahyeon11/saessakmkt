@@ -26,8 +26,8 @@ class Login extends Component {
             <div>
                 <Container>
                 <Test>로그인</Test>
-                <IdInput onChange={(event) => this.setState({loginInfo: {userId: event.target.value}})}></IdInput>
-                    <PWDInput onChange={(event) => this.setState({loginInfo: {pwd: event.target.value}})}></PWDInput>
+                <IdInput onChange={(event) => this.setState({loginInfo: {userId: event.target.value, pwd: this.state.loginInfo.pwd}})}></IdInput>
+                    <PWDInput onChange={(event) => this.setState({loginInfo: {pwd: event.target.value, userId: this.state.loginInfo.userId}})}></PWDInput>
                     <Btn1 onClick={this.loginHandler}>확인</Btn1>
                     <div style={{margin: '20px 0 0 0'}}/>
                     <GoogleLogin
