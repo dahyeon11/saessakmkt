@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import styled from "styled-components";
 import GoogleLogin from 'react-google-login'
 import naver from '../img/naver.png'
@@ -29,6 +30,10 @@ class Login extends Component {
                 <IdInput onChange={(event) => this.setState({loginInfo: {userId: event.target.value, pwd: this.state.loginInfo.pwd}})}></IdInput>
                     <PWDInput onChange={(event) => this.setState({loginInfo: {pwd: event.target.value, userId: this.state.loginInfo.userId}})}></PWDInput>
                     <Btn1 onClick={this.loginHandler}>확인</Btn1>
+                    <div style={{margin: '20px 0 0 0'}}/>
+                    <Link to='/signup'>
+                    <SignUp>회원가입</SignUp>
+                    </Link>
                     <div style={{margin: '20px 0 0 0'}}/>
                     <GoogleLogin
     clientId="1"
@@ -108,6 +113,20 @@ font-size: 18px;
   border: none;
   border-radius: 0;
   background-color: #03c75a;
+`
+
+const SignUp = styled.div`
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 49px;
+  text-align: center:
+  width: 100%;
+  height: 49px;
+  padding: 5px 39px 5px 11px;
+  border: solid 1px #dadada;
+  background: #fff;
+  box-sizing: border-box;
+    -webkit-border-image: none;
 `
 
 export default Login;

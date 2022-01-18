@@ -3,6 +3,7 @@ import './App.css';
 import Main from './pages/Main'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Login from './pages/Login';
+import SignUp from './pages/SignUp'
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { useState } from 'react';
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/login" element={<Login setIslogin={setIslogin} setInfo={setInfo} />} />
           <Route path="/categoty" element={<Login setIslogin={setIslogin} setInfo={setInfo} />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
         <Footer />
       </Router>
